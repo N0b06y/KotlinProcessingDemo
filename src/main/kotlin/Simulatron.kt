@@ -20,7 +20,7 @@ object Settings {
 
     const val           STRECKUNG_X = WINDOW_WIDTH/(MAX_X - MIN_X)
     private const val   MIN_Y = 0
-    private const val   MAX_Y = 1000
+    private const val   MAX_Y = 1
     const val           STRECKUNG_Y = WINDOW_WIDTH/(MAX_Y*2 - MIN_Y)
 
     // Konfiguration
@@ -31,7 +31,7 @@ object Settings {
 
     // Graph with the plotted function for the simulation
     val graph = Graph { t ->
-        return@Graph ((Q_0/ CAPACITY) * pow(E, -t / (RESISTANCE * CAPACITY.toFloat()))).toFloat()
+        return@Graph Q_0 * pow(E, -t / (RESISTANCE * CAPACITY.toFloat())).toFloat()
     }
 
     fun printSettings() {
