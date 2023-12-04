@@ -2,4 +2,4 @@
 ![img_1.png](img_1.png)
 
 # Project
-* This branch contains a simple simulations from physics class.
+* This branch contains a simple simulation from physics class.
