@@ -3,6 +3,7 @@ package Settings
 import data_classes.Vertex
 
 object Data {
+    /*
     val vertices: HashMap<Pair<Int,Int>, Vertex> = hashMapOf(
         Pair(0,0) to Vertex(100f, 100f),
         Pair(0,1) to Vertex(100f, 200f),
@@ -29,9 +30,9 @@ object Data {
         Pair(4,2) to Vertex(500f, 300f),
         Pair(4,3) to Vertex(500f, 400f),
         Pair(4,4) to Vertex(500f, 500f),
-    )
+    )*/
     val pair: HashMap<Pair<Int, Int>, Vertex> = hashMapOf(
-        Pair(0,0) to Vertex(100f, 100f),
-        Pair(0,1) to Vertex(100f, 200f),
+        Pair(0,0) to Vertex(100.0, 100.0),
+        Pair(0,1) to Vertex(100.0, 200.0),
     )
 }

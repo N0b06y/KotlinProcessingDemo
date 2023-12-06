@@ -12,7 +12,12 @@ data class Vector(
     private fun sum(other: Vector): Vector {
         return Vector(x + other.x, y + other.y)
     }
-    operator fun times(scalar: Float): Direction {
+
+    override operator fun timesAssign(scalar: Double) {
+        this.x *= scalar
+        this.y *= scalar
+    }
+    operator fun times(scalar: Double): Vector {
         return Vector(x * scalar, y * scalar)
     }
 }

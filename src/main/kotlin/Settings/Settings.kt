@@ -23,10 +23,10 @@ object Settings {
 
     // Konfiguration
     const val PIXEL_LENGTH      = 1f        // One pixel corresponds to $PIXEL_LENGTH meters
-    const val SPRING_CONSTANT   = 0.01    // N/m
-    const val DEFAULT_MASS      = 1f        // kg
+    const val SPRING_CONSTANT   = 5.0       // N/m
+    const val DEFAULT_MASS      = 100f        // kg
     const val ABSTAND           = 100f      // m
-    const val ABSTOSSKONSTANTE  = 10f       // N*m
+    const val DAMP_CONSTANT     = 50000.0    // N*m
 
 
     val DEFAULT_COLOR = Color()
@@ -39,6 +39,5 @@ object Settings {
         println("DEFAULT_RADIUS: $DEFAULT_RADIUS")
         println("STRECKUNG_X: $STRECKUNG_X")
         println("STRECKUNG_Y: $STRECKUNG_Y")
-
     }
 }

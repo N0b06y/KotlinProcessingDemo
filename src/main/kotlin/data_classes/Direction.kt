@@ -29,7 +29,7 @@ interface Direction {
         x -= direction.x
         y -= direction.y
     }
-    operator fun timesAssign(scalar: Int) {
+    operator fun timesAssign(scalar: Double) {
         x *= scalar
         y *= scalar
     }
@@ -49,5 +49,8 @@ interface Direction {
             diff -= 2* java.lang.Math.PI
         }
         return diff
+    }
+    fun inverse(): Vertex {
+        return Vertex(-x, -y)
     }
 }
