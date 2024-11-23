@@ -1,5 +1,3 @@
-package data_classes
-
 data class Color(
     val red: Float = 0f,
     val green: Float = 0f,

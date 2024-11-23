@@ -1,13 +1,13 @@
 package Settings
 
-import data_classes.Color
+import Color
 
 object Settings {
     const val DEBUG_ENABLED = true
 
     // Fenstereinstellungen
-    const val           WINDOW_HEIGHT     = 1000
-    const val           WINDOW_WIDTH      = 2000
+    const val           WINDOW_HEIGHT     = 500
+    const val           WINDOW_WIDTH      = 500
     private const val   DEFAULT_HEIGHT    = 200f
     const val           DEFAULT_RADIUS    = 10f
     const val           RESOLUTION        = 100
